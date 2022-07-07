@@ -60,10 +60,17 @@ export const useProjectStore = defineStore("projectStore", {
     tech: ["HTML", "CSS", "JS", "REST APIs"],
     link: "https://advicegeneratorapi.netlify.app/",
    },
-  ],
-  grave: [
    {
-    id: 1,
+    id: 6,
+    name: "Pokemon Picker",
+    image: new URL("../assets/featured/poke.png", import.meta.url).href,
+    description:
+     "A website that gives you a description of a pokemon with a click!",
+    tech: ["HTML", "CSS", "JS", "REST APIs"],
+    link: "https://pokemonpicker1.netlify.app/",
+   },
+   {
+    id: 7,
     name: "Quran API",
     image: new URL("../assets/featured/quranapi.png", import.meta.url).href,
     description: "A simple app that fetches random verses from the Quran API.",
@@ -71,6 +78,7 @@ export const useProjectStore = defineStore("projectStore", {
     link: "https://quranapi.netlify.app/",
    },
   ],
+  grave: [],
  }),
  getters: {
   getAllProjects: (state) => state.projects,
