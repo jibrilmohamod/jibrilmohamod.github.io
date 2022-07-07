@@ -1,19 +1,19 @@
-import { defineStore } from "pinia";
+import { defineStore } from "pinia"
 
 export const useWorkStore = defineStore("workStore", {
-  state: () => ({
-    works: [
-      {
-        id: 1,
-        name: "Trileotech",
-        position: "Jr. Frontend Developer",
-        from: "2022",
-        to: "Cur.",
-        link: "https://trileotech.com/",
-      },
-    ],
-  }),
-  getters: {
-    getAllWorks: (state) => state.works,
-  },
-});
+ state: () => ({
+  works: [
+   {
+    id: 1,
+    name: "Parexellence",
+    position: "Jr. Frontend Developer",
+    from: "2022",
+    to: "Cur.",
+    link: "https://Parexellence.com/",
+   },
+  ],
+ }),
+ getters: {
+  getAllWorks: (state) => state.works,
+ },
+})
