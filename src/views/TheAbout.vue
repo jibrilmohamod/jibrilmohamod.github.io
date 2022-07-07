@@ -3,7 +3,6 @@
   <p class="text-sm md:text-base leading-relaxed slg:text-lg lg:leading-loose">
    I'm Jibril Mohamud, a Vue.js developer based in Nairobi, Kenya. I am
    specialising in Web Development with Vue.js, Express, PostgreSQL and Node.js.
-   I am passionate developer and I love to learn new things.
   </p>
   <p class="text-sm md:text-base leading-relaxed slg:text-lg lg:leading-loose">
    I'm currently working for
