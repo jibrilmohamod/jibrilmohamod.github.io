@@ -24,6 +24,7 @@ export const useProjectStore = defineStore("projectStore", {
      "This is a landing page for Parexellence. A marketing agency located in Nairobi,Kenya.",
     tech: ["Vue.js", "TailwindCSS"],
     link: "https://parexellence.com/",
+    featured: true,
    },
 
    {
@@ -49,7 +50,6 @@ export const useProjectStore = defineStore("projectStore", {
      "This a landing page for Fyllo. It is a FrontendMentor's Challenge.",
     tech: ["HTML", "CSS"],
     link: "https://fyllolandingpage.netlify.app/#/",
-    featured: true,
    },
    {
     id: 5,

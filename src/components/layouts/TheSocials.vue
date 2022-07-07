@@ -11,11 +11,6 @@
     link="https://twitter.com/MohamodJibril"
     icon="ant-design:twitter-outlined"
    />
-   <SocialIcon
-    title="Instagram"
-    link="https://www.instagram.com/aniketkotal/"
-    icon="ant-design:instagram-outlined"
-   />
   </div>
   <ActionButton link="mailto:jazimjibril@gmail.com">Email Me</ActionButton>
  </div>
