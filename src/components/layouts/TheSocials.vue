@@ -11,6 +11,11 @@
     link="https://twitter.com/MohamodJibril"
     icon="ant-design:twitter-outlined"
    />
+   <SocialIcon
+    title="Instagram"
+    link="https://www.linkedin.com/in/jibril-mohamod-983295241/"
+    icon="ant-design:linkedin-outlined"
+   />
   </div>
   <ActionButton link="mailto:jazimjibril@gmail.com">Email Me</ActionButton>
  </div>
