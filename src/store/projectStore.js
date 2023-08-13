@@ -5,25 +5,22 @@ export const useProjectStore = defineStore("projectStore", {
   projects: [
    {
     id: 1,
+    name: "ALX Group Project Slides",
+    image: new URL("../assets/featured/alx.png", import.meta.url).href,
+    description: "This is the slides of the ALX Foundation's Group Project",
+    tech: ["Vue.js", "TailwindCSS"],
+    link:
+     "https://drive.google.com/file/d/1s6jDLpntxUiXP4qDFmJiW2XIgcXzO0Am/view",
+    featured: true,
+   },
+   {
+    id: 2,
     name: "Dulaa Motors",
     image: new URL("../assets/featured/Dulaa-Motors.png", import.meta.url).href,
     description:
      "I made this website for a car dealer in Dubai. It was a simple project that I undertook during my time at Mount Kenya University.",
     tech: ["Vue.js", "Strapi", "TailwindCSS"],
     link: "https://dulaamotorscompany.com/",
-    featured: true,
-   },
-   {
-    id: 2,
-    name: "Parexellence Landing Page",
-    image: new URL(
-     "../assets/featured/Parexellence-Prints.png",
-     import.meta.url
-    ).href,
-    description:
-     "This is a landing page for Parexellence. A marketing agency located in Nairobi,Kenya.",
-    tech: ["Vue.js", "TailwindCSS"],
-    link: "https://parexellence.com/",
     featured: true,
    },
 
