@@ -1,0 +1,13 @@
+{
+  "id": "community.cineatlas.bootstrap",
+  "version": "1.0.0",
+  "name": "CineAtlas",
+  "description": "Deep Stremio discovery with Trakt-powered personalization. Configure Trakt before installing.",
+  "resources": ["catalog"],
+  "types": ["movie", "series"],
+  "catalogs": [],
+  "behaviorHints": {
+    "configurable": true,
+    "configurationRequired": true
+  }
+}
