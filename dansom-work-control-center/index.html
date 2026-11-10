@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#f7f8fa" />
+  <meta name="description" content="Dansom Work Control Center, a local-first workspace for MEAL and TPM assignments." />
+  <title>Dansom Work Control Center</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-mark">D<span class="brand-dot"></span></span>
+        <span><strong>DANSOM</strong><small>WORK CONTROL CENTER</small></span>
+      </div>
+      <div class="side-scroll">
+        <div class="side-label">WORKSPACE</div>
+        <nav class="side-nav" aria-label="Workspace navigation">
+          <button data-nav="today" class="nav-link active"><span class="nav-icon">◫</span> Today <span id="navToday" class="nav-count"></span></button>
+          <button data-nav="week" class="nav-link"><span class="nav-icon">▦</span> This Week</button>
+          <button data-nav="projects" class="nav-link"><span class="nav-icon">▤</span> By Project</button>
+          <button data-nav="waiting" class="nav-link"><span class="nav-icon">◷</span> Waiting for Others <span id="navWaiting" class="nav-count"></span></button>
+          <button data-nav="ready" class="nav-link"><span class="nav-icon">↗</span> Ready to Send <span id="navReady" class="nav-count"></span></button>
+        </nav>
+        <div class="side-label second">TRACKERS</div>
+        <nav class="side-nav" aria-label="Record trackers">
+          <button data-nav="all" class="nav-link"><span class="nav-icon">☷</span> All Work</button>
+          <button data-nav="meetings" class="nav-link"><span class="nav-icon">▣</span> Meetings</button>
+          <button data-nav="deliverables" class="nav-link"><span class="nav-icon">▧</span> Deliverables & Reports</button>
+          <button data-nav="evidence" class="nav-link"><span class="nav-icon">⊞</span> Evidence Requests</button>
+          <button data-nav="missions" class="nav-link"><span class="nav-icon">⌁</span> Field Missions</button>
+          <button data-nav="contacts" class="nav-link"><span class="nav-icon">♙</span> Stakeholder Contacts</button>
+        </nav>
+        <div class="side-label second">TOOLS</div>
+        <nav class="side-nav" aria-label="Tools">
+          <button data-nav="templates" class="nav-link"><span class="nav-icon">▥</span> Templates</button>
+          <button data-nav="settings" class="nav-link"><span class="nav-icon">⚙</span> Backup & Settings</button>
+        </nav>
+      </div>
+      <div class="side-footer"><span class="safe-indicator"></span> Local-first workspace <small>Records stay in this browser</small></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="topbar-left"><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button><span class="crumb">DANSOM <span>/</span> <span id="breadcrumb">Today</span></span></div>
+        <div class="topbar-actions"><button class="btn btn-soft" data-action="capture"><span>＋</span> Quick capture</button><button class="btn btn-primary" data-action="new-item"><span>＋</span> New item</button></div>
+      </header>
+      <main id="app" tabindex="-1"></main>
+    </div>
+  </div>
+  <div class="overlay" id="overlay" hidden></div>
+  <div id="modalRoot"></div>
+  <input type="file" id="importFile" accept="application/json,.json" hidden />
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
